@@ -11,9 +11,9 @@ buttons.forEach(function (button) {
 
 // calls back event listener
 function handleClick(event) {
-  const currentFontSize =
-    Number.parseFloat(getComputedStyle(h2).getPropertyValue("--font-size")) +
-    0.05;
+  const currentFontSize = Number.parseFloat(
+    getComputedStyle(h2).getPropertyValue("--font-size")
+  );
 
   // Use 'target' to get the specific button that was clicked
   if (event.target.id === "increase") {
