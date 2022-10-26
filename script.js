@@ -1,6 +1,8 @@
 const h1 = document.querySelector("h1");
 const h2 = document.querySelector(".art-title");
 
+const input = document.querySelector(".art-title");
+
 // selects all buttons on the page
 const buttons = document.querySelectorAll("button");
 
@@ -30,3 +32,5 @@ function handleClick(event) {
 // getPropertyValue picks the exact one you want
 
 // Number.parseFloat turns string into a number so we can add an increase (+0.05)
+
+// GRAB CODE FOR CHANGING h1 COLOR
