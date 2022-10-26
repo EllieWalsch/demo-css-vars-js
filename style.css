@@ -13,7 +13,7 @@ body {
 
 h1 {
   --color: #00a8e8;
-
+  /* creates variable for color (used for themes), can be manipulated with JavaScript */
   color: var(--color);
 }
 
