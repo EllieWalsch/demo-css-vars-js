@@ -4,6 +4,11 @@ const h2 = document.querySelector(".art-title");
 // selects all buttons on the page
 const buttons = document.querySelectorAll("button");
 
+// adds event listener to all buttons
+buttons.forEach(function (button) {
+  button.addEventListener("click", handleClick);
+});
+
 // calls back event listener
 function handleClick(event) {
   const currentFontSize =
@@ -18,11 +23,6 @@ function handleClick(event) {
     h2.style.setProperty("--font-size", currentFontSize - 0.5 + "em");
   }
 }
-
-// adds event listener to all buttons
-buttons.forEach(function (button) {
-  button.addEventListener("click", handleClick);
-});
 
 // getComputedStyle all css styles of h2 - turns it into an object for JS to read
 // getPropertyValue picks the exact one you want
