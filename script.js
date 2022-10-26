@@ -7,6 +7,7 @@ const buttons = document.querySelectorAll("button");
 // adds event listener to all buttons
 buttons.forEach(function (button) {
   button.addEventListener("click", handleClick);
+  // when we click, then do this function "handleClick"
 });
 
 // calls back event listener
@@ -18,9 +19,10 @@ function handleClick(event) {
   // Use 'target' to get the specific button that was clicked
   if (event.target.id === "increase") {
     // .id pulls the value of the id so it reads more clear
-    h2.style.setProperty("--font-size", currentFontSize + 0.5 + "em");
+    h2.style.setProperty("--font-size", currentFontSize + 0.05 + "em");
   } else {
-    h2.style.setProperty("--font-size", currentFontSize - 0.5 + "em");
+    // decrease
+    h2.style.setProperty("--font-size", currentFontSize - 0.05 + "em");
   }
 }
 
